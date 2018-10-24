@@ -151,5 +151,6 @@ public class NumberWords {
 	  System.out.println("345 is converted to " + numberWord.convert(345));
 	  System.out.println("22 is converted to " + numberWord.convert(22));
 	  System.out.println("-1 is converted to " + numberWord.convert(-1));
+	  System.out.println("0 is converted to " + numberWord.convert(0));
   }
 }
