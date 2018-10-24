@@ -139,7 +139,7 @@ public class NumberWords {
    * @param args
    */
   public static void main(String[] args) {
-	  NumberToWords numberToWord = new NumberToWords();
+	  NumberWords numberWord = new NumberWords();
 
 	  System.out.println("4567 is converted to " + numberWord.convert(4567));
 	  System.out.println("1 is converted to " + numberWord.convert(1));
