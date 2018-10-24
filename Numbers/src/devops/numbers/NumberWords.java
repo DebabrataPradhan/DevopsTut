@@ -62,10 +62,12 @@ public class NumberWords {
 
 
   public String convert(long number) {
+	//System.out.println("Step 2");
+    // 0 to 999 999 999 999
 	if(number == 0) {
-		return "Bye  bye";
+		return "Bye bye";
 	}
-	if (number > 0 && number < 1000) {
+	if (number > 0 && number < 1000000000) {
 	    if (number == 0) { return "zero"; }
 	
 	    String snumber = Long.toString(number);
@@ -139,6 +141,7 @@ public class NumberWords {
 	}
   }
 
+
   /**
    * testing
    * @param args
@@ -147,10 +150,10 @@ public class NumberWords {
 	  NumberWords numberWord = new NumberWords();
 
 	  System.out.println("4567 is converted to " + numberWord.convert(4567));
+	  System.out.println("212345678 is converted to " + numberWord.convert(212345678));
+	  System.out.println("12 is converted to " + numberWord.convert(12));
 	  System.out.println("1 is converted to " + numberWord.convert(1));
-	  System.out.println("345 is converted to " + numberWord.convert(345));
-	  System.out.println("22 is converted to " + numberWord.convert(22));
-	  System.out.println("-1 is converted to " + numberWord.convert(-1));
 	  System.out.println("0 is converted to " + numberWord.convert(0));
+	  System.out.println("-67 is converted to " + numberWord.convert(-67));
   }
 }
