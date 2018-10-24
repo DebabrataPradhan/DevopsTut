@@ -13,8 +13,13 @@ public class NumberWordsTests {
 	}
 
 	@Test
-	public void numberThreeDegit() {
-		Assert.assertEquals("Success", "five hundred sixty seven", numberToWords.convert(567)) ;
+	public void numberFourDigit() {
+		Assert.assertEquals("Success", "four thousand five hundred sixty seven", numberToWords.convert(4567)) ;
+	}
+
+	@Test
+	public void numberMillion() {
+		Assert.assertEquals("Success", "two hundred twelve million three hundred forty five thousand six hundred seventy eight", numberToWords.convert(212345678)) ;
 	}
 
 	@Test
@@ -26,13 +31,14 @@ public class NumberWordsTests {
 	public void numberOneDigit() {
 		Assert.assertEquals("Success", "one", numberToWords.convert(1)) ;
 	}
-/*	@Test
+	
+	@Test
 	public void exitApplication() {
-		Assert.assertEquals("Failure", "Zero", numberToWords.convert(0)) ;
+		Assert.assertEquals("Success", "Bye bye", numberToWords.convert(0)) ;
 	}
 	
 	@Test
 	public void numberNegative() {
-		Assert.assertEquals("Failure", "Sixty seven", numberToWords.convert(-67)) ;
-	}*/
+		Assert.assertEquals("Success", "Out of range", numberToWords.convert(-67)) ;
+	}
 }
